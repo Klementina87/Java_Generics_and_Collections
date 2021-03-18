@@ -1,8 +1,8 @@
-public class BingoChip<T,T1> {
+public class BingoChip<T,I> {
     private T letter;
-    private T1 number;
+    private I number;
 
-    public BingoChip (T letter, T1 number) {
+    public BingoChip (T letter, I number) {
 
         this.letter = letter;
         this.number = number;

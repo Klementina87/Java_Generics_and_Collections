@@ -4,7 +4,7 @@ import java.util.Random;
 public class Bag<T> {
     ArrayList<T> objects;
     public Bag(){
-       objects = new ArrayList<>();
+       this.objects = new ArrayList<>();
         /* TODO
 Initialize the objects variable*/
     }
@@ -17,7 +17,7 @@ Initialize the objects variable*/
 
         if(object==null)
             throw new BagException("Nulls are not allowed");
-        objects.add(object);
+        this.objects.add(object);
     }
     /* TODO
 code the add method described. It should be public and not 
@@ -31,8 +31,8 @@ exception. Read the documentation for this.*/
             //return null;
        //return objects.get(index);
 
-            int index = (int)Math.round(Math.random()*(objects.size()-1));
-        return objects.get(index);
+            int index = (int)Math.round(Math.random()*(this.objects.size()-1));
+        return this.objects.get(index);
 
 
     }
@@ -67,10 +67,10 @@ throw an exception. */
         if (prob >= 1 || prob < 0)
             throw new BagException("Probability must be between 0 and 1");
         // This is a way to add elements in a given proportion.
-        int tot = (int)Math.round(objects.size()*prob);
+        int tot = (int)Math.round(this.objects.size()*prob);
         for(int i = 0;i < tot; i++){
             System.out.println("Adding "+i);
-            objects.add(element);
+            this.objects.add(element);
         }
     }
 }

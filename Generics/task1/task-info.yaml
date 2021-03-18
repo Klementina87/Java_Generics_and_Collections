@@ -107,7 +107,7 @@ files:
 - name: src/Bag.java
   visible: true
   placeholders:
-  - offset: 156
+  - offset: 161
     length: 49
     placeholder_text: "/* TODO \nInitialize the objects variable*/"
     initial_state:
@@ -117,7 +117,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: objects = new ArrayList<>();
-  - offset: 533
+  - offset: 543
     length: 170
     placeholder_text: "/* TODO \ncode the add method described. It should be public\
       \ and not \nreturn anything. Just take in a parameter and  throw an \nexception.\
@@ -134,7 +134,7 @@ files:
                   throw new BagException("Nulls are not allowed");
               objects.add(object);
           }
-  - offset: 1062
+  - offset: 1082
     length: 140
     placeholder_text: "/* TODO \nCode the drawOne method here. It should not take\
       \ any\nparameters. It should return a generic object. More on the\ntask description.*/"
@@ -149,7 +149,7 @@ files:
               int idx = (int)Math.round(Math.random()*(objects.size()-1));
               return objects.get(idx);
           }
-  - offset: 1214
+  - offset: 1234
     length: 12
     placeholder_text: /* return type?*/
     initial_state:
@@ -159,7 +159,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: ArrayList<T>
-  - offset: 1602
+  - offset: 1622
     length: 195
     placeholder_text: "/* TODO\nhowMany is the number of elements to draw. \nCreate\
       \ an ArrayList of the generic type and \"drawOne\" as\nmany times as you need,\
@@ -175,7 +175,7 @@ files:
               for(int i=0;i<howMany;i++)
                   result.add(this.drawOne());
               return result;
-  - offset: 1877
+  - offset: 1897
     length: 88
     placeholder_text: "/* TODO \nCheck that the probability is between 0 and 1. Otherwise\n\
       throw an exception. */"
@@ -183,7 +183,7 @@ files:
       length: 88
       offset: 799
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: |
       if (prob>1 || prob<0)
@@ -217,7 +217,7 @@ files:
   visible: true
   placeholders:
   - offset: 22
-    length: 8
+    length: 7
     placeholder_text: "/* TODO \nImplement this class.\nUse the instructions and check\
       \ how it is used in Task.java*/"
     initial_state:
